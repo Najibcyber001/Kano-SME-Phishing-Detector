@@ -1,5 +1,4 @@
-@"
-# Kano SME Phishing Detector
+﻿# Kano SME Phishing Detector
 
 Protects small businesses in Kano from fake bank alerts (First Bank, GTB, CBN scams).
 
@@ -37,4 +36,3 @@ Output: PHISHING (Score: 65)
 - Add Hausa language alert
 
 **Author:** Najib Muhammad Salis - Northwest University Kano
-"@ | Set-Content README.md -Encoding utf8
