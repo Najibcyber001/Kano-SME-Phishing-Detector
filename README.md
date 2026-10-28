@@ -15,9 +15,9 @@ This tool scans URLs and email content using rule-based detection to flag suspic
 - Simple CLI for non-technical staff
 
 ## How to Run
-\\\ash
+```bash
 python phishing_detector.py --url https://example.com
-\\\
+```
 
 ## Tech Stack
 - Python 3.x
