@@ -1,38 +1,27 @@
 ﻿# Kano SME Phishing Detector
 
-Protects small businesses in Kano from fake bank alerts (First Bank, GTB, CBN scams).
+A lightweight Python tool to protect Small and Medium Enterprises in Kano, Nigeria from phishing attacks.
 
-### Problem
+## Problem
+SMEs in Kano lose money daily to fake bank alerts, fraudulent supplier invoices, and phishing links via WhatsApp and SMS.
 
-SMEs in Kano receive fake SMS like "Your account blocked, click here". This leads to account hacking and loss of business funds.
+## Solution
+This tool scans URLs and email content using rule-based detection to flag suspicious patterns.
 
-### How It Works
+## Features
+- Detects fake domains and typosquatting
+- Checks for suspicious keywords (urgent, verify account, blocked)
+- Flags URL shorteners and IP-based links
+- Simple CLI for non-technical staff
 
-Risk scoring system:
-- No HTTPS: +20
-- Suspicious keywords (verify, login, account): +15
-- @ symbol trick: +30
-- Many hyphens: +10
-- Long URL: +10
+## How to Run
+\\\ash
+python phishing_detector.py --url https://example.com
+\\\
 
-Score:
-- 50+ = PHISHING
-- 20+ = SUSPICIOUS
-- Below 20 = SAFE
+## Tech Stack
+- Python 3.x
+- Regex and URL parsing
 
-### How to Run
-
-python phishing_detector.py
-
-### Example
-
-Input: http://first-bank-verify.com@login.com
-Output: PHISHING (Score: 65)
-
-### Future Improvements
-
-- Add Machine Learning model
-- Build web app for traders in Kano
-- Add Hausa language alert
-
-**Author:** Najib Muhammad Salis - Northwest University Kano
+## Author
+**Najib Muhammad Salis** - Cybersecurity Student, Northwest University Kano | Aspiring SOC Analyst
